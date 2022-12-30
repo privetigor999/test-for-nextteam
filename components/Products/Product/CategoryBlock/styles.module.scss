@@ -1,0 +1,41 @@
+.categoryBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0px 3px;
+  width: 100%;
+  .category {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999999;
+  }
+  .ratingBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .rateBlock {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      .star {
+        margin-right: 4px;
+      }
+    }
+
+    .count {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: right;
+      text-decoration-line: underline;
+      color: #999999;
+      margin-left: 7px;
+    }
+  }
+}

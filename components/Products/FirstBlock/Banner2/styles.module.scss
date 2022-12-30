@@ -1,0 +1,101 @@
+.banner2 {
+  width: 332px;
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .image {
+    object-fit: cover;
+  }
+  .bannerInfo {
+    width: 100%;
+    height: 100%;
+    background: #e1dfdf;
+    position: relative;
+    p {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: #2e2e33;
+      padding: 20px 0px 20px 14px;
+    }
+    .saleBlock2 {
+      position: absolute;
+      .saleWrapper {
+        color: #000000;
+        position: absolute;
+        background-color: #ffdc38;
+        width: 56px;
+        height: 24px;
+        font-weight: 400;
+        font-size: 12px;
+        top: 20px;
+        left: 70px;
+        -webkit-transform: skew(150deg);
+        -moz-transform: skew(150deg);
+        -o-transform: skew(150deg);
+
+        .value {
+          position: absolute;
+          color: #000000 !important;
+          font-weight: 800 !important;
+          font-size: 20px !important;
+          top: -84%;
+          left: -10%;
+          -webkit-transform: skew(-150deg);
+          -moz-transform: skew(-150deg);
+          -o-transform: skew(-150deg);
+        }
+      }
+    }
+    .button {
+      padding-left: 14px;
+      cursor: pointer;
+      position: relative;
+
+      .choose {
+        z-index: 1;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        color: #2e2e33;
+        opacity: 0.8;
+        padding-left: 25px;
+        position: absolute;
+        top: -24px;
+        left: -10px;
+      }
+      .circle {
+        position: absolute;
+        top: -6px;
+        right: 72px;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #c2c2c2;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .banner2 {
+    width: 300px;
+    height: 100px;
+    .image {
+      display: none;
+    }
+    .bannerInfo {
+      .button {
+        display: none;
+      }
+    }
+  }
+}

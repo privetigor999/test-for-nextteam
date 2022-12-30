@@ -1,0 +1,30 @@
+.hitWrapper {
+  color: #ffffff;
+  position: absolute;
+  background-color: #f23c30;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 5px 15px;
+  -webkit-transform: skew(150deg);
+  -moz-transform: skew(150deg);
+  -o-transform: skew(150deg);
+  top: 30px;
+  right: 30px;
+  .hitDark {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: -7px;
+    border-top: 24px solid #d9362b;
+    border-right: 14px solid transparent;
+    -webkit-transform: skew(-150deg);
+    -moz-transform: skew(-150deg);
+    -o-transform: skew(-150deg);
+  }
+  p {
+    -webkit-transform: skew(-150deg);
+    -moz-transform: skew(-150deg);
+    -o-transform: skew(-150deg);
+  }
+}

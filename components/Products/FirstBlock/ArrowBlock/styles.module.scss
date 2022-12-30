@@ -1,0 +1,44 @@
+.arrowBlock {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 16px;
+  top: 108px;
+  left: 0;
+  .arrow {
+    position: relative;
+    top: 20px;
+    width: 50px;
+    height: 2px;
+    background-color: #2e2e33;
+    opacity: 0.3;
+    left: 0;
+    display: block;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      top: -6.5px;
+      right: -4px;
+      background-color: #2e2e33;
+      transform: rotate(45deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      top: 6.5px;
+      right: -4px;
+      background-color: #2e2e33;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .arrowBlock {
+    display: none;
+  }
+}

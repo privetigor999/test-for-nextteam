@@ -1,0 +1,19 @@
+.favoriteBlockActive,
+.favoriteBlockInactive {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.favoriteBlockActive {
+  border: 1px solid red;
+}
+
+.favoriteBlockInactive {
+  border: 1px solid #f5f5f7;
+}

@@ -1,0 +1,30 @@
+.firstBlockWrrapper {
+  width: 332px;
+  height: 462px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  padding-top: 20px;
+  margin: 0 30px 30px 0;
+  position: relative;
+  .title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #2e2e33;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .firstBlockWrrapper {
+    max-width: 300px;
+    height: 220px;
+
+    .title {
+      display: none;
+    }
+  }
+}
